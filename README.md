@@ -10,13 +10,15 @@
 
 ## 1 打印当前时间（例如 2020-04-07 13:41:42），写出SQL语句和结果
 
-## 2 组合打印自己的姓名和学号( 例如 张三+123456 或者 zhangsan+123456 显示需包含加号)，写出SQL语句和结果
+## 2 组合打印自己的姓名和学号
+
+(例如 张三+123456 或者 zhangsan+123456 显示需包含加号)，写出SQL语句和结果
 
 ## 3 建立如下表1和表2，写出建表语句和插入语句。
 
 表1：其中deptno为主键
 ```
-deptno,deptno,loc
+deptno, deptno,    loc
 (10, "ACCOUNTING", "NEW YORK"),
 (20, "RESEARCH", "DALLAS"),
 (30, "SALES", "CHICAGO"),
@@ -25,8 +27,8 @@ deptno,deptno,loc
 
 表2：其中empno字段为主键
 ```
-  empno, ename, job, MGR, Hiredate, sal, comm, deptno
-  (7369, "SMITH", "CLERK", 7902, "1981-03-12", 800.00, NULL, 20),
+        empno, ename,    job,    MGR,   Hiredate,    sal,   comm, deptno
+        (7369, "SMITH", "CLERK", 7902, "1981-03-12", 800.00, NULL, 20),
 	(7499, "ALLEN", "SALESMAN", 7698, "1982-03-12", 1600, 300, 30),
 	(7521, "WARD", "SALESMAN", 7698, "1838-03-12", 1250, 500, 30),
 	(7566, "JONES", "MANAGER", 7839, "1981-03-12", 2975, NULL, 20),
@@ -41,10 +43,13 @@ deptno,deptno,loc
 	(7934, "MILLER", "CLERK", 7782, "1981-03-12", 1300, NULL, 10)
 ```
 
-3.1 表2 中再插入一条记录：`(你的学号，你的姓名或者拼音， “CLERK”, 7782, 你的生日,  NULL, NULL, 10)`
-  例如：`(12345,  "Zhangsan", "sTUDENT", 7782, "2000-03-12", NULL, NULL, 10)`
+3.1 表2 中再插入一条记录：
 
-3.2 表中年龄（Hiredate字段）最小的人。
+`(你的学号，你的姓名或者拼音， “CLERK”, 7782, 你的生日,  NULL, NULL, 10)`
+ 
+例如：`(12345,  "Zhangsan", "sTUDENT", 7782, "2000-03-12", NULL, NULL, 10)`
+
+3.2 表中入职时间（Hiredate字段）最短的人。
 
 3.3 有几种职位（job字段）？在关系代数中，本操作是什么运算？
 

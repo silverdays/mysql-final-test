@@ -22,7 +22,7 @@ deptno,deptno,loc
 (40, "OPERATIONS", "BOSTON")
 ```
 
-表2：其中empno字段为主键，deptno字段需要在表1中存在
+表2：其中empno字段为主键
 ```
   empno, ename, job, MGR, Hiredate, sal, comm, deptno
   (7369, "SMITH", "CLERK", 7902, "1981-03-12", 800.00, NULL, 20),
@@ -41,18 +41,26 @@ deptno,deptno,loc
 ```
 
 3.1 表2 中再插入一条记录：`(你的学号，你的姓名或者拼音， “CLERK”, 7782, 你的生日,  NULL, NULL, 10)`
-  例如：`	(12345,  "Zhangsan", "CLERK", 7782, "2000-03-12", NULL, NULL, 10)`
+  例如：`(12345,  "Zhangsan", "sTUDENT", 7782, "2000-03-12", NULL, NULL, 10)`
 
-3.2 表中姓名（ename字段）最长的人
+3.2 表中年龄（Hiredate字段）最小的人
 
 3.3 有几种职位（job字段）？分别是什么？
 
-3.4 将MILLER的 comm 改为300；
+3.4 将 MILLER的 comm 改为300；
 
 3.5 计算每个人的收入(ename, sal + comm)，并按收入降序排序。 提示计算时 NULL 要当做 0 处理； 
 
-3.6 显示每个人的下属,没有下属的显示 NULL
+3.6 显示每个人的下属, 没有下属的显示 NULL
 
-3.7 显示每个人所在的城市(loc)
+3.7 建立一个视图：每个人的empno, ename, job 和 loc。简述为什么要建立本视图。
+
+3.8 为表2增加一个约束：deptno字段需要在表1中存在；
+
+3.9 为表2增加一个索引：ename 字段。简述为什么要在 ename 字段建立索引
+
+3.10 将表2的 sal 字段改名为 salary
+
+3.11 撰写一个函数 get_deptno_from_empno，输入 empno，输出对应的 deptno。 简述函数和存储过程有什么不同。
 
 

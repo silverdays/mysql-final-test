@@ -25,7 +25,7 @@
 
 表1：其中deptno为主键
 ```
-deptno, deptno,    loc
+deptno, dname,    loc
 (10, "ACCOUNTING", "NEW YORK"),
 (20, "RESEARCH", "DALLAS"),
 (30, "SALES", "CHICAGO"),
